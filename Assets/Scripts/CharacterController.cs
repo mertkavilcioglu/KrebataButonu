@@ -13,12 +13,14 @@ public class CharacterController : MonoBehaviour
     public float jumpForce = 10f;
 
     public float moveSpeed = 5f;
+    public bool canButton;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         characterCollider = GetComponent<Collider2D>();
+        canButton = false;
     }
 
 

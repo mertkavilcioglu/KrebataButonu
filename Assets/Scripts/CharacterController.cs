@@ -6,11 +6,11 @@ public class CharacterController : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody2D rb;
-   // private Collider2D characterCollider;
+    private Collider2D characterCollider;
 
     private bool isGrounded;
     public LayerMask groundLayer;
-    public float jumpForce = 5f;
+    public float jumpForce = 10f;
 
     public float moveSpeed = 5f;
 
@@ -18,7 +18,7 @@ public class CharacterController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        //characterCollider = GetComponent<Collider2D>();
+        characterCollider = GetComponent<Collider2D>();
     }
 
 
@@ -26,6 +26,7 @@ public class CharacterController : MonoBehaviour
     {
         MoveCharacter();
         HandleJump();
+        CheckGround();
     }
 
     void MoveCharacter()
@@ -54,11 +55,17 @@ public class CharacterController : MonoBehaviour
 
     void HandleJump()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, LayerMask.GetMask("Ground"));
-
-        if ((Input.GetKeyDown(KeyCode.Space)) && isGrounded)
+        if ((Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W)) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
+    }
+
+    void CheckGround()
+    {
+        float raycastLength = 0.1f;
+        float colliderHalfHeight = characterCollider.bounds.extents.y;
+
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastLength + colliderHalfHeight, groundLayer);
     }
 }

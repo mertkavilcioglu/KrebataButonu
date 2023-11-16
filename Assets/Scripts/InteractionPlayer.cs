@@ -31,7 +31,7 @@ public class InteractionPlayer : MonoBehaviour
 
             if (ataberkScript != null)
             {
-                ataberkScript.SpawnZORT();
+                ataberkScript.AtaberkButonu();
             }
         }
     }

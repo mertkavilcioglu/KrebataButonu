@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1621234230}
   - component: {fileID: 1621234231}
   m_Layer: 0
-  m_Name: Mistik Ataberk Butonu
+  m_Name: Krebata Butonu
   m_TagString: Ataberk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,10 +6,11 @@ public class Ataberk : MonoBehaviour
 {
     public GameObject firstObjectToActivate;
     public GameObject secondObjectToDeactivate;
+    public GameObject eButton;
 
     public void AtaberkButonu()
     {
-        //Debug.Log("ATABERK");
+        Debug.Log("ATABERK");
         if (firstObjectToActivate != null)
         {
             firstObjectToActivate.SetActive(true);
@@ -18,6 +19,22 @@ public class Ataberk : MonoBehaviour
         if (secondObjectToDeactivate != null)
         {
             secondObjectToDeactivate.SetActive(false);
+        }
+    }
+
+    public void AtaberkEActivate()
+    {
+        if (eButton != null)
+        {
+            eButton.SetActive(true);
+        }
+    }
+
+    public void AtaberkEDeactivate()
+    {
+        if (eButton != null)
+        {
+            eButton.SetActive(false);
         }
     }
 }

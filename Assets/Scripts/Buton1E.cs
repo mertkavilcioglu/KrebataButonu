@@ -12,7 +12,7 @@ public class Buton1E : MonoBehaviour
         {
             if (EButton1 != null)
             {
-                Debug.Log("EEEEEEEEE ");
+                //Debug.Log("EEEEEEEEE ");
                 EButton1.SetActive(true);
             }
         }
@@ -24,7 +24,7 @@ public class Buton1E : MonoBehaviour
         {
             if (EButton1 != null)
             {
-                Debug.Log("EEEEEEEEE ");
+                //Debug.Log("EEEEEEEEE ");
                 EButton1.SetActive(false);
             };
         }

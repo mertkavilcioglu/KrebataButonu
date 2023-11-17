@@ -10,7 +10,7 @@ public class Ataberk : MonoBehaviour
 
     public void AtaberkButonu()
     {
-        Debug.Log("ATABERK");
+        //Debug.Log("ATABERK");
         if (firstObjectToActivate != null)
         {
             firstObjectToActivate.SetActive(true);

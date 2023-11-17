@@ -6,7 +6,7 @@ public class Ataberk : MonoBehaviour
 {
     public GameObject firstObjectToActivate;
     public GameObject secondObjectToDeactivate;
-    public GameObject eButton;
+    [SerializeField] GameObject eButton;
 
     public void AtaberkButonu()
     {

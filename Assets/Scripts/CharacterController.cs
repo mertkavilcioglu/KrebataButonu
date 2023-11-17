@@ -70,4 +70,6 @@ public class CharacterController : MonoBehaviour
 
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastLength + colliderHalfHeight, groundLayer);
     }
+
+
 }

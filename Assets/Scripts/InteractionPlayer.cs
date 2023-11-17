@@ -56,7 +56,7 @@ public class InteractionPlayer : MonoBehaviour
         if (other.CompareTag("Ataberk"))
         {
             Ataberk ataberkscp = FindObjectOfType<Ataberk>();
-            ataberkscp.AtaberkEActivate();
+            //ataberkscp.AtaberkEActivate();
             characterController.canButton = true;
             Debug.Log("canButton: " + characterController.canButton);
         }
@@ -67,7 +67,7 @@ public class InteractionPlayer : MonoBehaviour
         if (other.CompareTag("Ataberk"))
         {
             Ataberk ataberkscp = FindObjectOfType<Ataberk>();
-            ataberkscp.AtaberkEDeactivate();
+            //ataberkscp.AtaberkEDeactivate();
             characterController.canButton = false;
             Debug.Log("canButton: " + characterController.canButton);
         }

@@ -6,7 +6,7 @@ public class Ataberk : MonoBehaviour
 {
     public GameObject firstObjectToActivate;
     public GameObject secondObjectToDeactivate;
-    [SerializeField] GameObject eButton;
+    //[SerializeField] GameObject eButton;
 
     public void AtaberkButonu()
     {
@@ -22,7 +22,7 @@ public class Ataberk : MonoBehaviour
         }
     }
 
-    public void AtaberkEActivate()
+    /*public void AtaberkEActivate()
     {
         if (eButton != null)
         {
@@ -36,5 +36,5 @@ public class Ataberk : MonoBehaviour
         {
             eButton.SetActive(false);
         }
-    }
+    }*/
 }

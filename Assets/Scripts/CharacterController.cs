@@ -39,13 +39,11 @@ public class CharacterController : MonoBehaviour
 
         if (horizontalInput > 0)
         {
-            // Saða hareket
             transform.localScale = new Vector3(1, 1, 1);
             animator.SetBool("isWalking", true);
         }
         else if (horizontalInput < 0)
         {
-            // Sola hareket
             transform.localScale = new Vector3(-1, 1, 1);
             animator.SetBool("isWalking", true);
         }

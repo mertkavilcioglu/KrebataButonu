@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class InteractionPlayer : MonoBehaviour
 {
-    // Diðer bileþenlere eriþim için referanslar
     private CharacterController characterController;
 
     private void Start()
     {
-        // Start fonksiyonunda gerekli referanslarý al
         characterController = GetComponentInParent<CharacterController>();
     }
 

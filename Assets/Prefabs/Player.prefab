@@ -234,5 +234,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   jumpForce: 10
-  moveSpeed: 5
+  moveSpeed: 4.5
   canButton: 0

@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
     public void StartP1()
     {
         musicSource.Stop();
-        musicSource.volume = 0.02f;
+        musicSource.volume = 0.02f; //0.1 yap
         musicSource.clip = p1;
         musicSource.Play();
     }
@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
     public void StartP2()
     {
         musicSource.Stop();
-        musicSource.volume = 0.02f;
+        musicSource.volume = 0.02f; //0.1 yap
         musicSource.clip = p2;
         musicSource.Play();
     }

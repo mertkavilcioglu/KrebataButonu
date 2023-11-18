@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip p1;
     public AudioClip c2;
     public AudioClip p2;
+    public AudioClip c3;
 
     private void Start()
     {
@@ -38,6 +39,14 @@ public class AudioManager : MonoBehaviour
         musicSource.Stop();
         musicSource.volume = 0.02f;
         musicSource.clip = p2;
+        musicSource.Play();
+    }
+
+    public void StartC3()
+    {
+        musicSource.Stop();
+        musicSource.volume = 0.07f;
+        musicSource.clip = c3;
         musicSource.Play();
     }
 }
